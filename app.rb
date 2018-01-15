@@ -11,5 +11,5 @@ module FormsLab
       erb :"pirates/new"
     end
     # code other routes/actions here
-
+  end
 end
