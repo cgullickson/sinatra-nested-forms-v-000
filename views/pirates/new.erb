@@ -5,17 +5,26 @@
   <title>Pirates</title>
  </head>
  <body>
-   <form method="POST" action="/team">
-     <h1>Welcome to the Nested Forms Lab!</h1>
-     <p>Ship Name:<input id="ship_name_1" type="text" name="pirate[ships][][name]">
-      <p>Team Name:<input type="text" name="name"></p>
-      <p>Coach:<input type="text" name="coach"></p>
-      <p>Point Guard:<input type="text" name="pg"></p>
-      <p>Shooting Guard:<input type="text" name="sg"></p>
-      <p>Small Forward:<input type="text" name="sf"></p>
-      <p>Power Forward:<input type="text" name="pf"></p>
-      <p>Center:<input type="text" name="c"></p>
-      <input type="submit" name="" value="submit">
+    <form action="/pirates" method="post">
+      <p><label for="">Pirate Name:</label>
+      <input type="text" name="pirate[name]"></p>
+      <p><label for="">Weight:</label>
+      <input type="text" name="pirate[weight]"></p>
+      <p><label for="">Height:</label>
+      <input type="text" name="pirate[height]"></p>
+      <p><label for="">Ship Name:</label>
+      <input id="ship_name_1" type="text" name="pirate[ships][][name]"></p>
+      <p><label for="">Ship Type:</label>
+      <input id="ship_type_1" type="text" name="pirate[ships][][type]"></p>
+      <p><label for="">Booty:</label>
+      <input id="ship_booty_1" type="text" name="pirate[ships][][booty]"></p>
+      <p><label for="">Ship Name:</label>
+      <input id="ship_name_2" type="text" name="pirate[ships][][name]"></p>
+      <p><label for="">Ship Type:</label>
+      <input id="ship_type_2" type="text" name="pirate[ships][][type]"></p>
+      <p><label for="">Booty:</label>
+      <input id="ship_booty_2" type="text" name="pirate[ships][][booty]"></p>
+      <input type="submit" value="Submit">
     </form>
  </body>
 </html>
